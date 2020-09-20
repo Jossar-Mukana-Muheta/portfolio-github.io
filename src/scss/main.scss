@@ -1,0 +1,26 @@
+// Variables
+
+
+  
+
+//== Colors
+//
+// --------------------------------------------------
+$white:               #fff !default;
+$black:                 #3B3B3B !default;
+$red:                 #D10D2D;
+$gray-texte:           #a0a0b4;
+$gray-background:      #F3F3F3;
+// Mixins
+//== Breakpoints
+// For Container centered.
+$breakpoints: (
+    desktop: 769px,
+    );
+
+//== Media queries breakpoints
+@mixin desktop {
+    @media screen and  (min-width: map-get($breakpoints, desktop)) {
+      @content;
+    }
+  }
